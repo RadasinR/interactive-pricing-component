@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/RadasinR/interactive-pricing-component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://interactive-pricing-component-zsr4.vercel.app/)
 
 ## My process
 
