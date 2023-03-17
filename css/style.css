@@ -264,7 +264,10 @@ main {
   border: none;
   border-top: 2px solid var(--LIGHTER-GRAYISH-BLUE)
 }
-
+.visualy_hiden {
+  display: none;
+  visibility: hidden;
+}
 /* END UTILITYS */
 
 /* MEDIA */
