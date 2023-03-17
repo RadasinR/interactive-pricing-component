@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/index.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <h1 class="header__title">Simple, traffic-based pricing</h1>
+      <p class="header__p">Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+
+    <form class="card" oninput="pages.value=parseInt(pagesRange.value)" action="">
+      <section class="container__price grid">
+        <p class="pricing__pageViews">
+          <output name="pages" for="pagesViews" id="pagesViews" aria-live="polite"></output> Pageviews
+        </p>
+
+        <p class="pricing__monthly">
+          <output name="monthly" class="pricing__output---monthly" for="pagesViews" id="price"
+            aria-live="polite">$16.00</output> / month
+        </p>
+        <input class="pricing__range" type="range" name="pages" id="pagesRange" min="10" max="1000"
+          onchange="setViews(this)" />
+
+
+
+        <section class="price_plan">
+          <p>Monthly Billing</p>
+          <div>
+            <input class="sliderCheck" type="checkbox" name="monthlyYearly" id="monthlyYearly" />
+            <label class="slider" for="monthlyYearly">Toggle</label>
+          </div>
+          <p>
+            Yearly Billing <span class="accent---orange">25% <span class="label">discount</span></span>
+          </p>
+        </section>
+      </section>
+      <hr class="seperator">
+      <section class="container__cta">
+        <section class="cta__details">
+          <p>
+            <img src="/images/icon-check.svg" alt="check mark" /> Unlimited
+            websites
+          </p>
+          <p>
+            <img src="/images/icon-check.svg" alt="check mark" /> 100% data
+            ownership
+          </p>
+          <p>
+            <img src="/images/icon-check.svg" alt="check mark" /> Email reports
+          </p>
+        </section>
+        <button class="btn btn---submit" type="submit">Start my trial</button>
+      </section>
+    </form>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
